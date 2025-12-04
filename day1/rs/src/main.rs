@@ -40,7 +40,7 @@ fn p2turn(dial: i32, is_left: bool, distance: i32) -> (i32, i32) {
 fn main() {
     let part1: bool = false;
 
-    let file_path = "../../input.txt";
+    let file_path = "../input.txt";
     let lines = fs::read_to_string(file_path).expect("can't read file");
 
     let mut dial = 50;

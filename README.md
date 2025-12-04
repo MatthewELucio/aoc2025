@@ -2,8 +2,8 @@
 Advent of Code 2025
 
 ```
-g++ dayx.cpp -o dayx && ./dayx
+./make_day.sh x
 
-cargo new rs
-cargo build
+g++ dayx.cpp -o dayx && ./dayx
+cargo run
 ```

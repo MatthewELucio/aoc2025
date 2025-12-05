@@ -28,7 +28,7 @@ int p2turn(int dial, bool isLeft, int distance, int& numClicks) {
 }
 
 int main() {
-    bool p1 = false;
+    bool part1 = false;
 
     int dial = 50;
     int numDialZero = 0;
@@ -41,7 +41,7 @@ int main() {
         char dir = line[0];
         int distance = std::stoi(line.substr(1, 3));
 
-        if (p1) {
+        if (part1) {
             dial = p1turn(dial, dir == 'L', distance);
             numDialZero += dial == 0;
         } else {

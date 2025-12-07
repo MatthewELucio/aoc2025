@@ -1,9 +1,7 @@
 echo "day $1"
-mkdir day$1
+cargo new day$1
 cd day$1
 touch day$1.cpp
-touch input.txt
+aocdl -year 2025 -day $1
 touch test.txt
-cargo new rs
-cd rs
 cargo run

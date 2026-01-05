@@ -33,7 +33,7 @@ fn main() {
 
     for line in lines.lines() {
 
-        if line == "" {
+        if line.is_empty() {
             is_range = false;
         } else if is_range {
             if let Some((lstr, rstr)) = line.split_once('-') {
